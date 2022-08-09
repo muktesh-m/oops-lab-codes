@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int n, i = 1, s = 0;
+    cout << "Enter a number: ";
+    cin >> n;
+    while (i < n)
+    {
+        if (n % i == 0)
+            s = s + i;
+        i++;
+    }
+
+    if (s == n)
+        cout << i << " is a perfect number\n";
+    else
+        cout << i << " is not a perfect number\n";
+
+    return 0;
+}
